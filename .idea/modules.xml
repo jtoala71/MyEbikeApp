@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyEbikeApp.iml" filepath="$PROJECT_DIR$/MyEbikeApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myebikeapp.iml" filepath="$PROJECT_DIR$/myebikeapp.iml" />
     </modules>
   </component>
 </project>
