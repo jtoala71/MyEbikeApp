@@ -30,8 +30,6 @@ public class AsistenteActivity extends AppCompatActivity {
         mySeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                radioButton.setEnabled(false);
-                radioButton.refreshDrawableState();
             }
 
             @Override

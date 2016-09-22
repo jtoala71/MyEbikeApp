@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,52 +27,53 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/title_vertical_margin"
-                    android:textSize="20dp"
-                    android:text="Tipo de Bicicleta"/>
+                    android:text="Tipo de Bicicleta"
+                    android:textSize="20dp" />
 
-                <Button android:id="@+id/botton_ayuda_tipo_bicicleta"
+                <Button
+                    android:id="@+id/botton_ayuda_tipo_bicicleta"
                     android:layout_width="@dimen/boton_ayuda_tamanyo"
                     android:layout_height="@dimen/boton_ayuda_tamanyo"
-                    android:background="@mipmap/ic_ayuda_icono"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
 
             </RelativeLayout>
 
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center_horizontal">
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/tipo_urbana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="    Urbana"
-                    android:button="@drawable/bici_urbana"/>
+                    android:button="@drawable/bici_urbana"
+                    android:text="    Urbana" />
 
                 <RadioButton
                     android:id="@+id/tipo_interurbana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="    Interurbana"
-                    android:button="@drawable/bici_interurbana"/>
+                    android:button="@drawable/bici_interurbana"
+                    android:text="    Interurbana" />
 
                 <RadioButton
                     android:id="@+id/tipo_montanya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="    Montaña"
-                    android:button="@drawable/bici_montanya"/>
+                    android:button="@drawable/bici_montanya"
+                    android:text="    Montaña" />
 
             </RadioGroup>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                android:background="@android:color/darker_gray" />
 
 
             <RelativeLayout
@@ -84,14 +85,15 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/title_vertical_margin"
-                    android:textSize="20dp"
-                    android:text="Diámetro rueda"/>
+                    android:text="Diámetro rueda"
+                    android:textSize="20dp" />
 
-                <Button android:id="@+id/botton_ayuda_diametro_rueda"
+                <Button
+                    android:id="@+id/botton_ayuda_diametro_rueda"
                     android:layout_width="@dimen/boton_ayuda_tamanyo"
                     android:layout_height="@dimen/boton_ayuda_tamanyo"
-                    android:background="@mipmap/ic_ayuda_icono"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
 
             </RelativeLayout>
 
@@ -109,65 +111,65 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="16"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:text="16" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="18"
-                    android:paddingLeft="25dp"/>
+                    android:paddingLeft="25dp"
+                    android:text="18" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20"
-                    android:paddingLeft="25dp"/>
+                    android:paddingLeft="25dp"
+                    android:text="20" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
                     android:text="24"
-                    android:textStyle="bold"
                     android:textSize="16dp"
-                    android:paddingLeft="25dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="26"
-                    android:paddingLeft="25dp"/>
+                    android:paddingLeft="25dp"
+                    android:text="26" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
                     android:text="27.5"
-                    android:textStyle="bold"
                     android:textSize="16dp"
-                    android:paddingLeft="20dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="28"
-                    android:paddingLeft="16dp"/>
+                    android:paddingLeft="16dp"
+                    android:text="28" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
                     android:text="29"
-                    android:textStyle="bold"
                     android:textSize="16dp"
-                    android:paddingLeft="25dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                android:background="@android:color/darker_gray" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -178,14 +180,15 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/title_vertical_margin"
-                    android:textSize="20dp"
-                    android:text="Ubicación Motor"/>
+                    android:text="Ubicación Motor"
+                    android:textSize="20dp" />
 
-                <Button android:id="@+id/botton_ayuda_ubicacio_motor"
+                <Button
+                    android:id="@+id/botton_ayuda_ubicacio_motor"
                     android:layout_width="@dimen/boton_ayuda_tamanyo"
                     android:layout_height="@dimen/boton_ayuda_tamanyo"
-                    android:background="@mipmap/ic_ayuda_icono"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
 
             </RelativeLayout>
 
@@ -196,32 +199,32 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
-                <RadioButton
-                    android:id="@+id/traccion_trasera"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/traccion_trasera" />
+                    <RadioButton
+                        android:id="@+id/traccion_trasera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/traccion_trasera" />
 
-                <RadioButton
-                    android:id="@+id/traccion_central"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/traccion_central" />
+                    <RadioButton
+                        android:id="@+id/traccion_central"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/traccion_central" />
 
-                <RadioButton
-                    android:id="@+id/traccion_delantera"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@drawable/traccion_delantera" />
+                    <RadioButton
+                        android:id="@+id/traccion_delantera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/traccion_delantera" />
 
-            </RadioGroup>
+                </RadioGroup>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                android:background="@android:color/darker_gray" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -232,23 +235,30 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/title_vertical_margin"
-                    android:textSize="20dp"
-                    android:text="Suspensión"/>
+                    android:text="Autonomía km"
+                    android:textSize="20dp" />
 
-                <Button android:id="@+id/botton_ayuda1"
+                <Button
+                    android:id="@+id/botton_ayuda_autonomia"
                     android:layout_width="@dimen/boton_ayuda_tamanyo"
                     android:layout_height="@dimen/boton_ayuda_tamanyo"
-                    android:background="@mipmap/ic_ayuda_icono"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
 
             </RelativeLayout>
 
+            <net.asovel.myebikeapp.Asistente.CustomSeekBar
+                android:id="@+id/mySeekBar_autonomia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                android:background="@android:color/darker_gray" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -259,39 +269,102 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/title_vertical_margin"
-                    android:textSize="20dp"
-                    android:text="Suspension"/>
+                    android:text="Presupuesto "
+                    android:textSize="20dp" />
 
-                <Button android:id="@+id/botton_ayuda_suspension"
+                <Button
+                    android:id="@+id/botton_ayuda_presupuesto"
                     android:layout_width="@dimen/boton_ayuda_tamanyo"
                     android:layout_height="@dimen/boton_ayuda_tamanyo"
-                    android:background="@mipmap/ic_ayuda_icono"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
+
+            </RelativeLayout>
+
+            <net.asovel.myebikeapp.Asistente.CustomSeekBar
+                android:id="@+id/mySeekBar_presupuesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="7" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:text="Suspensión"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/botton_ayuda1"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
 
             </RelativeLayout>
 
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal">
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/suspension_delantera"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:button="@drawable/suspension_delantera"/>
+                    android:button="@drawable/suspension_delantera" />
 
                 <RadioButton
                     android:id="@+id/suspension_delantera_sillin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:button="@drawable/suspension_delantera"/>
+                    android:button="@drawable/suspension_delantera" />
 
             </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:text="Tipo de cuadro"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/botton_ayuda_suspension"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_ayuda_icono" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
-</RelativeLayout>
+</FrameLayout>
