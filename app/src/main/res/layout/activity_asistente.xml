@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.asovel.myebikeapp.Asistente.AsistenteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:textSize="20dp"
+                    android:text="Tipo de Bicicleta"/>
+
+                <Button android:id="@+id/botton_ayuda_tipo_bicicleta"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:background="@mipmap/ic_ayuda_icono"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/tipo_urbana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    Urbana"
+                    android:button="@drawable/bici_urbana"/>
+
+                <RadioButton
+                    android:id="@+id/tipo_interurbana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    Interurbana"
+                    android:button="@drawable/bici_interurbana"/>
+
+                <RadioButton
+                    android:id="@+id/tipo_montanya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    Montaña"
+                    android:button="@drawable/bici_montanya"/>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:textSize="20dp"
+                    android:text="Diámetro rueda"/>
+
+                <Button android:id="@+id/botton_ayuda_diametro_rueda"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:background="@mipmap/ic_ayuda_icono"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <net.asovel.myebikeapp.Asistente.CustomSeekBar
+                android:id="@+id/mySeekBar_diametro_rueda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:paddingLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:paddingLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:paddingLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:paddingLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27.5"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:paddingLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:paddingLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:paddingLeft="25dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:textSize="20dp"
+                    android:text="Ubicación Motor"/>
+
+                <Button android:id="@+id/botton_ayuda_ubicacio_motor"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:background="@mipmap/ic_ayuda_icono"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup_traccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/traccion_trasera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/traccion_trasera" />
+
+                <RadioButton
+                    android:id="@+id/traccion_central"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/traccion_central" />
+
+                <RadioButton
+                    android:id="@+id/traccion_delantera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/traccion_delantera" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:textSize="20dp"
+                    android:text="Suspensión"/>
+
+                <Button android:id="@+id/botton_ayuda1"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:background="@mipmap/ic_ayuda_icono"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/title_vertical_margin"
+                    android:textSize="20dp"
+                    android:text="Suspension"/>
+
+                <Button android:id="@+id/botton_ayuda_suspension"
+                    android:layout_width="@dimen/boton_ayuda_tamanyo"
+                    android:layout_height="@dimen/boton_ayuda_tamanyo"
+                    android:background="@mipmap/ic_ayuda_icono"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/suspension_delantera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/suspension_delantera"/>
+
+                <RadioButton
+                    android:id="@+id/suspension_delantera_sillin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/suspension_delantera"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
